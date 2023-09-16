@@ -13,14 +13,7 @@ client = discord.Client()
 
 
 async def checkEmail(email):
-    isValid = False
-    if (re.match(regex, email)):
-        isValid = True
-        return isValid
-
-    else:
-        isValid = False
-        return isValid
+    return re.match(regex, email)
 
 
 @client.event
